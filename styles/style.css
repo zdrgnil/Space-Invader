@@ -1,0 +1,51 @@
+#background {
+width:500px; 
+border-left: 1px solid black;
+border-right: 1px solid black; 
+border-top: 1px solid black;
+background-image: url('../images/bg_1.png');
+}
+
+#menu_bar{
+width: 500px;
+border-left: 1px solid black;
+border-right: 1px solid black; 
+border-bottom: 1px solid black;
+background-color: rgb(200, 200, 200); 
+overflow: hidden;
+}
+
+#sp{
+float:left;
+}
+
+#b{
+width:240px; 
+border-right: 1px solid black;
+padding:3px; 
+float:left;
+}
+#c{
+border: 1px solid black;
+width:150px; 
+height: 16px;
+float:left;
+}
+
+#exp_prog{
+width:0px;
+height:16px; 
+background-color:green;
+}
+
+#exp_p{
+position:relative;
+top:-16px
+}
+
+#stage_score{
+width:240px;
+padding:3px;
+position:relative; 
+float:left
+}	

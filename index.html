@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Space Invader</title>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body onKeyPress="keypressed(event)">
+	<div id="background">	
+		<canvas id="canvas" width="500" height="600">
+		</canvas>
+	</div>
+
+	<div id="menu_bar">	 
+		<div id="b">
+		Level: <span id="level"> 1 </span><br>
+		<span id="sp"> Exp: &nbsp;&nbsp;&nbsp;&nbsp;</span> 
+			<div id="c">
+				<div id="exp_prog" >
+				</div>
+				<center id="exp_p">
+					<span id="exp">0</span>/<span id="total_exp">10</span>
+				</center>
+			</div>
+		</div>
+		
+		<div id="stage_score">
+		Stage: <span id="stage"> 1 </span><br>
+		Score: <span id="score"> 0 </span>
+		</div>		
+	</div>
+
+	<script src="scripts/jquery-1.11.0.min.js"></script>
+	<script src="scripts/objects.js"></script>
+	<script src="scripts/functions.js"></script>
+	<script src="scripts/enviroment.js"></script>
+	<script>
+
+		
+	</script>
+</body>
+</html>

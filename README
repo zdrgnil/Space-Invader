@@ -1,0 +1,26 @@
+Student: Ning Lin, XinZhi Zhang
+Student #: 999015293, 999376125
+CDF Login: g2linnin,  g2zxz
+
+Description of the game flow
+When the game starts, 3 arrays of images of ships, bullets, and aliens are loaded respectively. 
+A start page is displayed, showing instructions and prompting user to press Enter key to start the game.
+The game is in off-state now.
+If user presses Enter, the game will be changed into on-state. A wave of aliens and a ship are created and displayed.
+The user presses A or left arrow to move the ship left, D or right arrow to move the ship right, J or space bar to fire bullets, P to change the status of the game (pause or continue) and Esc to stop and return to the start page. These are implemented through the keypressed function in environment.js.
+Whenever a bullet hits an alien, the function handle_hit handles the alien event as follows: the bullet and alien disappears, the ship gains experience points and its score increases. 
+When user reaches higher levels, the type of the ship will change, with more bullets fired in one shot. Also when the user reaches higher stages, number and speed of aliens will change as well.
+If any the aliens hit the bottom of the page, a game-over page is displayed and the game is set to off-state. The page also promts user to press Enter to restart the game. If key event of pressing Enter is detected, the game will be reset to on-state and start. All data will be reset.
+
+Defined objects
+ship
+The class ship has attributes storing its context, length, width, vertical and horizontal positions on the canvas, speed, score and level. It also has functions which implement its action of moving left, moving right, calculating its center, adding its score, increasing its experience points, firing bullets, and displaying itself on the screen.
+Bullet
+The class bullet has attributes storing its context, vertical and horizontal positions on the canvas, size of the image of the bullet type and direction. It also has functions which implements the following: checking if the bullet is out of the boundary of the canvas, moving the bullet upwards and displaying the bullet itself on the screen.
+Alien
+The class alien has attributes storing its context, type, length and width depending on its type, vertical and horizontal positions on the canvas, color and score for the ship if the alien itself is hit. It also has functions which implements the following: checking if it is hit by a bullet, moving it left, right and downwards and randomly in a limited range, and displaying itself on the screen.
+
+Datastructures
+1 arrays of bullets and 1 array of aliens are defined to store current bullets and aliens that are displayed on the screen. When a bullet hits an alien, both objects are removed from their arrays respectively.
+3 arrays of pictures are defined to store images of bullets, ships and aliens of different types respectively.
+ 
